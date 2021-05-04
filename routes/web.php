@@ -14,5 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('perfil');
+});
+
+
+Route::get('/historialVentas', function () {
+    return view('tablaVentas');
+});
+
+Route::get('/lista_prodcutos', function () {
+    return view('listaProductos');
+});
+Route::get('/lista_proveedores', function () {
+    return view('listaProveedores');
+});
+Route::get('/venta', function () {
+    return view('realizarVenta');
+});
+Route::get('/estanteria', function () {
+    return view('listaEstanterias');
+});
+Route::get('/altaProducto', function () {
+    return view('altaProductos');
 });
